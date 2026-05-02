@@ -18,7 +18,7 @@ app.use(express.static(path.join(__dirname, "public"))); //2nd
 app.use("/api/students", studentRoutes); //where visit on url to communicate with server e.g www.ourapp.com/api/students
 
 
-const Port = process.env.PORT || 5000;
+const Port = process.env.MYSQLPORT || 3306;
 
 app.listen(Port, () =>{
  console.log(`Server is running on ${Port}`)

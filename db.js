@@ -10,10 +10,10 @@ const mysql = require("mysql2"); //require means import
 //   database: process.env.DB_NAME,
 // });
 const db= mysql.createConnection({
-  host: process.env.MYSQLHOST,
+  host: process.env.MYSQLHOST, 
   user: process.env.MYSQLUSER,
-  password: process.env.MYSQLPASSWORD,
-  database: process.env.DB_NAME,
+  password: process.env.MYSQL_ROOT_PASSWORD,
+  database: process.env.MYSQL_DATABASE,
 });
 
 //VERSION CONTROL: WHICH MEANS TRACKING ALL CHANGES
