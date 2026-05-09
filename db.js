@@ -14,6 +14,7 @@ const db= mysql.createConnection({
   user: process.env.MYSQLUSER,
   password: process.env.MYSQL_ROOT_PASSWORD,
   database: process.env.MYSQL_DATABASE,
+  port: process.env.MYSQLPORT || 3306, // Add this line
 });
 
 //VERSION CONTROL: WHICH MEANS TRACKING ALL CHANGES
