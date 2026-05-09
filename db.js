@@ -9,12 +9,12 @@ const mysql = require("mysql2"); //require means import
 //   password: process.env.DB_PASSWORD,
 //   database: process.env.DB_NAME,
 // });
-const db= mysql.createConnection({
-  host: process.env.MYSQLHOST, 
+const db = mysql.createConnection({
+  host: process.env.MYSQLHOST,
   user: process.env.MYSQLUSER,
-  password: process.env.MYSQL_ROOT_PASSWORD,
-  database: process.env.MYSQL_DATABASE,
-  port: process.env.MYSQLPORT || 3306, // Add this line
+  password: process.env.MYSQLPASSWORD,
+  database: process.env.MYSQLDATABASE,
+  port: process.env.MYSQLPORT
 });
 
 //VERSION CONTROL: WHICH MEANS TRACKING ALL CHANGES
